@@ -50,6 +50,13 @@ def process_data(df):
            (df['Title of Course'].str.strip().str.lower() != 'na'), 'Grade'] = 8
     
     df.drop(columns=['Internship Duration Weeks', 'Course Duration Weeks'], inplace=True)
+    
+    # Calculate total marks
+    df['Total Marks'] = df['Grade'] * 10
+    
+    # Add remarks column with the total marks
+    df['Remarks'] = df['Total Marks'].apply(lambda x: f'Total Marks: {x}' if not pd.isna(x) else 'No Grade')
+    
     return df
 
 st.title("Internship and Course Grading Tool")
