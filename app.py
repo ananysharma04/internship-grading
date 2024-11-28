@@ -97,7 +97,7 @@ with st.expander("Submit Internship/Course Details via Google Form"):
     Please fill out the Google Form to submit your internship or course details.
     Click the button below to proceed to the form.
     """)
-    google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLScZeT0CGaxCXueqiNGvQ-qJRdcC4Sy-h_wumOUiKd3W9rvMhQ/viewform?usp=sf_link"
+    google_form_url = "https://forms.gle/Ptgnqho9b9pxByYW7"
     if st.button('Go to Google Form'):
         st.write(f"[Click here to fill out the form!]({google_form_url})")
 
