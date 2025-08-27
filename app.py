@@ -88,17 +88,17 @@ if uploaded_file is not None:
 
 
 
-# Title of the Streamlit app
-st.title("Internship and Course Submission Tool")
+# # Title of the Streamlit app
+# st.title("Internship and Course Submission Tool")
 
-# Section 1: Redirect to Google Form
-with st.expander("Submit Internship/Course Details via Google Form"):
-    st.write("""
-    Please fill out the Google Form to submit your internship or course details.
-    Click the button below to proceed to the form.
-    """)
-    google_form_url = "https://forms.gle/Ptgnqho9b9pxByYW7"
-    if st.button('Go to Google Form'):
-        st.write(f"[Click here to fill out the form!]({google_form_url})")
+# # Section 1: Redirect to Google Form
+# with st.expander("Submit Internship/Course Details via Google Form"):
+#     st.write("""
+#     Please fill out the Google Form to submit your internship or course details.
+#     Click the button below to proceed to the form.
+#     """)
+#     google_form_url = "https://forms.gle/Ptgnqho9b9pxByYW7"
+#     if st.button('Go to Google Form'):
+#         st.write(f"[Click here to fill out the form!]({google_form_url})")
 
-# Section 2
+# # Section 2
